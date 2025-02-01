@@ -1,5 +1,15 @@
 # Getting Started with Create React App
 
+## Getting started with devcontainers
+
+To develop this application smoothly in Visual Studio Code and devcontainers using podman, you need to edit `.env` file in root directory with following variable:
+```
+WATCHPACK_POLLING=true
+```
+Also, change in `package.json` start script to unsert `BROWSER` environment. This will workaround problems with vscode server launching browser and failing and also will fix live reloading of data.
+
+# Project
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

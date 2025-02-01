@@ -8,11 +8,13 @@ function App() {
     <div style={{ textAlign: 'center', marginTop: '2rem' }}>
       <h1>Hello, World!</h1>
       <p>Welcome to your React TypeScript project running in a dev container!</p>
+      <p>Have a nice day.</p>
+      <p>Is this updating now? I hope so. </p>
     </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit <code>src/App.tsx</code> 
         </p>
         <a
           className="App-link"

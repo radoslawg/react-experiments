@@ -15,8 +15,7 @@
 		  // Add the IDs of extensions you want installed when the container is created.
 		  "extensions": [
 			"dbaeumer.vscode-eslint",
-    		"esbenp.prettier-vscode",
-			"ms-vscode.vscode-typescript-tslint-plugin"
+    		"esbenp.prettier-vscode"
 		  ]
 		}
 	  },
@@ -31,12 +30,12 @@
 	// "customizations": {},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	// "remoteUser": "node",
 	"containerUser": "node",
-	"updateRemoteUserUID": true,
+	// "updateRemoteUserUID": true,
 	"containerEnv": {
 		"SHELL": "/bin/bash",
-    	"COMSPEC": "",
-		"BROWSER": ""
-	}
+    	"COMSPEC": ""
+	},
+	"runArgs": ["--userns=keep-id"]
 }
